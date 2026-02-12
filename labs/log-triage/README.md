@@ -1,31 +1,85 @@
-Laboratorio 1:
+Lab 1: Log Triage + Evidence Pack
+Scenario
 
-Caso: Eres el on-call y te piden investigar por qué un servicio tuvo fallas. Te entregan un archivo de logs (lo vas a crear tú) y debes producir un paquete de 
-evidencia + documentación para un runbook básico.
+You are on-call. A service experienced failures and you must analyze a log file to produce an evidence pack plus a basic runbook for incident response.
 
-Dentro del log podremos observar las lineas de error que causaron el problema, dentro del log podremos encontrar el top 3 de errores clasificandolos por su tipo y el numero de 
-veces que se presento dicho error
+Goal
 
-# Conteo Top 3
-      6 err_type=db
-      5 err_type=auth
-      3 err_type=timeout
+Identify the most frequent failure patterns (top errors + top HTTP codes)
 
-# === Top 3 code (conteo) ===
-      9 code=500
-      8 code=401
-      2 code=504
+Capture the maximum latency observed
 
-# === Latencia máxima ===
-latencia_maxima=2438ms
+Produce documentation that another engineer can use to triage the same incident
 
-#Runbook mini
+Findings
+Top 3 error types (count)
 
-1.- Recomendacion 1
-2.- Recomendacion 2
-3.- Recomendacion 3
+err_type=db → 6
 
-#Como reproducir
+err_type=auth → 5
 
-Obtener un reporte de logs y clasificar el tipo de errores para determinar que errores fueron los que mas se presentaron
-Obtener un reporte sobre la latencia
+err_type=timeout → 3
+
+Top 3 response codes (count)
+
+code=500 → 9
+
+code=401 → 8
+
+code=504 → 2
+
+Max latency observed
+
+2438ms
+
+Interpretation
+
+Most failures are driven by server errors (500) and authentication errors (401).
+
+The presence of DB-related errors plus high max latency (2438ms) suggests backend degradation or dependency instability during the incident window.
+
+Mini runbook (what I would do in production)
+
+Confirm impact & scope
+
+Validate whether error rate and latency are sustained or a short spike.
+
+Identify which endpoints/users are affected (if available).
+
+Triage by dominant pattern
+
+If 401 dominates: check auth provider health, token expiration, misconfiguration, recent deployments or secrets/keys rotation.
+
+If db errors dominate: check DB connectivity, pool saturation, timeouts, and recent schema/migration changes.
+
+Mitigation / rollback
+
+Apply the fastest safe mitigation (scale service, reduce load/rate-limit, disable risky feature flag if applicable).
+
+Roll back to the last known good version if errors correlate with a recent release.
+
+Document actions taken and outcomes.
+
+How to reproduce (high level)
+
+Generate or obtain a service log file (service.log) with INFO/WARN/ERROR lines.
+
+Count occurrences by:
+
+error type (err_type=*)
+
+response code (code=*)
+
+Compute:
+
+Top 3 error types
+
+Top 3 response codes
+
+Maximum latency value
+
+Save outputs as text files and keep them as an evidence pack alongside the log.
+
+Evidence pack
+
+All supporting outputs are stored as .txt files in this folder (counts, top errors, top codes, max latency, and inventory).
