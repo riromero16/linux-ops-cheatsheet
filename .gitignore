@@ -1,5 +1,5 @@
 # Do not commit secrets (even demo)
-evidence/secret.example.txt
+samples/secret.txt
 .env
 *.pem
 id_rsa
