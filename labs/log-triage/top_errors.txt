@@ -1,0 +1,25 @@
+=== Top 3 err_type (conteo) ===
+      6 err_type=db
+      5 err_type=auth
+      3 err_type=timeout
+
+=== Evidencia (primeras 5 líneas por err_type del Top 3) ===
+--- err_type=db ---
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500 latency=1448ms
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: DB connection failed err_type=db code=500 latency=1292ms
+
+--- err_type=auth ---
+2026-02-12 12:58:07 [ERROR] service: Invalid token err_type=auth code=401 latency=873ms
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [ERROR] service: Unauthorized access attempt err_type=auth code=401
+2026-02-12 12:58:07 [ERROR] service: Unauthorized access attempt err_type=auth code=401
+
+--- err_type=timeout ---
+2026-02-12 12:58:07 [ERROR] service: Gateway timeout contacting dependency err_type=timeout code=504
+2026-02-12 12:58:07 [ERROR] service: Request timed out waiting for response err_type=timeout code=500 latency=1178ms
+2026-02-12 12:58:07 [ERROR] service: Request timed out waiting for response err_type=timeout code=500
+

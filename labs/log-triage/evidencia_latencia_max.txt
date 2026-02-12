@@ -1,0 +1,5 @@
+=== Latencia máxima ===
+latency=2438ms
+
+=== Evidencia (líneas con latency máxima) ===
+2026-02-12 12:58:07 [INFO] service: Cache warmed latency=2438ms

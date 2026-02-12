@@ -1,0 +1,9 @@
+total 28
+drwxr-xr-x 2 riromero riromero 4096 Feb 12 13:40 .
+drwxr-xr-x 3 riromero riromero 4096 Feb 12 12:49 ..
+-rw-r--r-- 1 riromero riromero  152 Feb 12 13:05 evidence.txt
+-rw-r--r-- 1 riromero riromero  153 Feb 12 13:20 evidencia_latencia_max.txt
+-rw-r--r-- 1 riromero riromero 1241 Feb 12 13:19 evidencia_top_codigos.txt
+-rw-r--r-- 1 riromero riromero    0 Feb 12 13:40 inventario.txt
+-rw-r--r-- 1 riromero riromero 3517 Feb 12 12:58 service.log
+-rw-r--r-- 1 riromero riromero 1421 Feb 12 13:19 top_errors.txt

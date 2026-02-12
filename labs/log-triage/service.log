@@ -1,0 +1,50 @@
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [INFO] service: Service started
+2026-02-12 12:58:07 [ERROR] service: Invalid token err_type=auth code=401 latency=873ms
+2026-02-12 12:58:07 [INFO] service: Request handled latency=275ms
+2026-02-12 12:58:07 [INFO] service: Config loaded
+2026-02-12 12:58:07 [INFO] service: Health check OK latency=698ms
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500
+2026-02-12 12:58:07 [INFO] service: Request handled latency=867ms
+2026-02-12 12:58:07 [INFO] service: Worker ready
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500 latency=1448ms
+2026-02-12 12:58:07 [INFO] service: Request handled latency=398ms
+2026-02-12 12:58:07 [WARN] service: Rate limit nearing latency=1926ms
+2026-02-12 12:58:07 [WARN] service: Disk usage high code=500 latency=56ms
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [WARN] service: Retrying request code=401
+2026-02-12 12:58:07 [INFO] service: Health check OK latency=1350ms
+2026-02-12 12:58:07 [INFO] service: Health check OK latency=760ms
+2026-02-12 12:58:07 [WARN] service: Temporary upstream issue
+2026-02-12 12:58:07 [INFO] service: Health check OK
+2026-02-12 12:58:07 [INFO] service: Config loaded
+2026-02-12 12:58:07 [ERROR] service: Unauthorized access attempt err_type=auth code=401
+2026-02-12 12:58:07 [INFO] service: Health check OK latency=1414ms
+2026-02-12 12:58:07 [INFO] service: Request handled
+2026-02-12 12:58:07 [INFO] service: Request handled latency=2106ms
+2026-02-12 12:58:07 [INFO] service: Cache warmed latency=2438ms
+2026-02-12 12:58:07 [WARN] service: Rate limit nearing code=401 latency=527ms
+2026-02-12 12:58:07 [INFO] service: Health check OK
+2026-02-12 12:58:07 [WARN] service: High latency detected code=401 latency=1168ms
+2026-02-12 12:58:07 [ERROR] service: Unauthorized access attempt err_type=auth code=401
+2026-02-12 12:58:07 [WARN] service: Temporary upstream issue
+2026-02-12 12:58:07 [WARN] service: Rate limit nearing
+2026-02-12 12:58:07 [WARN] service: Retrying request
+2026-02-12 12:58:07 [WARN] service: High latency detected latency=178ms
+2026-02-12 12:58:07 [ERROR] service: Gateway timeout contacting dependency err_type=timeout code=504
+2026-02-12 12:58:07 [INFO] service: Config loaded
+2026-02-12 12:58:07 [WARN] service: Rate limit nearing
+2026-02-12 12:58:07 [ERROR] service: Request timed out waiting for response err_type=timeout code=500 latency=1178ms
+2026-02-12 12:58:07 [ERROR] service: Request timed out waiting for response err_type=timeout code=500
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: DB connection failed err_type=db code=500 latency=1292ms
+2026-02-12 12:58:07 [WARN] service: Retrying request hint=db
+2026-02-12 12:58:07 [INFO] service: Config loaded latency=1739ms
+2026-02-12 12:58:07 [WARN] service: Retrying request latency=385ms
+2026-02-12 12:58:07 [WARN] service: Temporary upstream issue code=504 latency=602ms
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [WARN] service: High latency detected hint=timeout latency=415ms
+2026-02-12 12:58:07 [WARN] service: Temporary upstream issue
+2026-02-12 12:58:07 [INFO] service: Service started
+2026-02-12 12:58:07 [INFO] service: Request handled

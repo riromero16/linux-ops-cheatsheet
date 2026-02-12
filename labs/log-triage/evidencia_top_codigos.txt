@@ -1,0 +1,24 @@
+=== Top 3 code (conteo) ===
+      9 code=500
+      8 code=401
+      2 code=504
+
+=== Evidencia (primeras 5 líneas por code del Top 3) ===
+--- code=500 ---
+2026-02-12 12:58:07 [ERROR] service: DB pool exhausted err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500
+2026-02-12 12:58:07 [ERROR] service: Query failed: deadlock detected err_type=db code=500 latency=1448ms
+2026-02-12 12:58:07 [WARN] service: Disk usage high code=500 latency=56ms
+2026-02-12 12:58:07 [ERROR] service: Request timed out waiting for response err_type=timeout code=500 latency=1178ms
+
+--- code=401 ---
+2026-02-12 12:58:07 [ERROR] service: Invalid token err_type=auth code=401 latency=873ms
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [ERROR] service: Authentication failed err_type=auth code=401
+2026-02-12 12:58:07 [WARN] service: Retrying request code=401
+2026-02-12 12:58:07 [ERROR] service: Unauthorized access attempt err_type=auth code=401
+
+--- code=504 ---
+2026-02-12 12:58:07 [ERROR] service: Gateway timeout contacting dependency err_type=timeout code=504
+2026-02-12 12:58:07 [WARN] service: Temporary upstream issue code=504 latency=602ms
+

@@ -1,5 +1,39 @@
 # Linux Ops Cheatsheet (Week 1)
 
+## Find Print f
+
+En find, -printf te deja formatear cómo se imprime cada resultado (similar a printf en C).
+
+Tu formato:
+
+-printf '%TY-%Tm-%Td %TH:%TM:%TS %p\n'
+
+
+genera una línea por archivo así:
+
+2026-02-12 23:15:07.123456789 ./ruta/del/archivo.txt
+
+
+Desglose:
+
+%TY → año de la última modificación (Time)
+
+%Tm → mes (01–12)
+
+%Td → día (01–31)
+
+%TH → hora (00–23)
+
+%TM → minuto (00–59)
+
+%TS → segundos con fracción (ej. 07.123456789)
+
+%p → ruta del archivo tal como find la encuentra (ej. ./logs/service.log)
+
+\n → salto de línea (para que cada archivo salga en su propia línea)
+
+O sea: fecha + hora + ruta ordenable y fácil de leer.
+
 ## Navegación
 - pwd
 - ls -la

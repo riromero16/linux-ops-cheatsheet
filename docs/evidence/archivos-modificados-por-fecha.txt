@@ -1,0 +1,12 @@
+12-02-2026 16:34 ./archivos-modificados-por-fecha.txt
+12-02-2026 12:19 ./wc_all_evidence.txt
+12-02-2026 12:19 ./find_txt_files.txt
+12-02-2026 12:19 ./find_modified_last_day.txt
+12-02-2026 11:37 ./secret_ls_before.txt
+12-02-2026 11:37 ./secret_ls_after.txt
+12-02-2026 11:35 ./top_errors.txt
+12-02-2026 11:35 ./lines_count.txt
+12-02-2026 11:35 ./errors_grep.txt
+12-02-2026 11:33 ./ps.txt
+12-02-2026 11:33 ./grep_errors.txt
+12-02-2026 11:33 ./df.txt
