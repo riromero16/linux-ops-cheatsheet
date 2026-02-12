@@ -1,0 +1,12 @@
+  61 docs/evidence/find_modified_last_day.txt
+   9 docs/evidence/find_txt_files.txt
+   2 docs/evidence/top_errors.txt
+   1 docs/evidence/secret_ls_before.txt
+   4 docs/evidence/wc_all_evidence.txt
+   2 docs/evidence/errors_grep.txt
+  10 docs/evidence/ps.txt
+  15 docs/evidence/df.txt
+   1 docs/evidence/secret_ls_after.txt
+   1 docs/evidence/lines_count.txt
+   1 docs/evidence/grep_errors.txt
+ 107 total

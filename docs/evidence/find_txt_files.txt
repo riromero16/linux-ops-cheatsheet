@@ -1,0 +1,9 @@
+docs/evidence/find_txt_files.txt
+docs/evidence/top_errors.txt
+docs/evidence/secret_ls_before.txt
+docs/evidence/errors_grep.txt
+docs/evidence/ps.txt
+docs/evidence/df.txt
+docs/evidence/secret_ls_after.txt
+docs/evidence/lines_count.txt
+docs/evidence/grep_errors.txt
