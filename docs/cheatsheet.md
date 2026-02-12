@@ -51,12 +51,32 @@ NO es recomendado subir a este tipo de proyectos ninguna de las siguientes llave
  -Cookies de sesión o headers tipo Authorization: Bearer ...
 
 ## Pipes
-; encadenar comandos (Ej: ls -la && echo "Listado de archivos  correcto")
-
-&& se usa para ejecutar algo después de otra ejecución correcta 
-
-|| se usa para ejecutar algo si otro comando falla
+ -; encadenar comandos (Ej: ls -la && echo "Listado de archivos  correcto")
+ -&& se usa para ejecutar algo después de otra ejecución correcta 
+ -|| se usa para ejecutar algo si otro comando falla
 
 ## GREP y Find
 grep -i 'texto': Buscar palabras en archivos de texto, -i para que no distinga entre caps
 find . -type d -name "*": buscar archivos o documentos -d (directorio) -f (file)
+
+## xargs
+xargs es una herramienta que toma texto desde stdin (pipe) y lo convierte en argumentos para ejecutar otro comando. Sirve cuando un comando produce una lista (archivos, IDs, líneas) 
+y tú quieres usar esa lista para llamar otro comando.
+
+Ejemplos:
+1) Borrar archivos encontrados
+find . -name "*.log" | xargs rm
+
+2) Ejecutar un comando por cada elemento
+cat urls.txt | xargs -n 1 curl -I 
+
+3) Ver qué va a ejecutar (debug)
+echo "a b c" | xargs -t echo
+
+
+## sort, uniq, wc
+Comando sort : ordena las filas de una entrada o un archivo de texto ej.:ls -l | sort -nk 5
+Comando uniq : filtra las líneas duplicadas de una entrada o de un archivo de texto. ej.: sort archivo.txt | uniq > archivo_sin_duplicados.txt
+Comando sed : realiza operaciones básicas de edición de texto sin la necesidad de abrir el archivo. ej.: sed 's/manzana/pera/' fruta.txt
+Comando date : muestra fecha y hora del sistema. ej.: date +%Y-%m-%d
+Comando uname : muestra información del sistema. ej.: uname -a P.D.: una mejor forma (o por lo menos mas bonita) de ver la información del sistema es con neofetch , si no lo tienen lo pueden instalar con el comando sudo apt install neofetch
