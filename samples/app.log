@@ -1,2 +1,4 @@
-INFO App started
-ERROR Timeout on request
+INFO start
+ERROR timeout
+WARN retry
+ERROR db

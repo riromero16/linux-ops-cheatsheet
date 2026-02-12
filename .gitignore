@@ -1,0 +1,6 @@
+# Do not commit secrets (even demo)
+samples/secret.txt
+.env
+*.pem
+id_rsa
+id_ed25519
